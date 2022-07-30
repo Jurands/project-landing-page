@@ -2,37 +2,114 @@ body {
     display: flex;
     flex-direction: column;
     margin: auto;
+    width: 100%;
+    height: 100vh;
     font-family: 'Roboto', sans-serif;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: #F9FAF8;
+}
+
+.sec1 {
+    background-color: #1F2937;
+    color:#F9FAF8;
+    font-weight: 800;
+    flex: 0;
+}
+
+.sec11 {
+    padding: 1% 22%;
 }
 
 header {
     font-size: 24px;
+}
+
+.headerNav {
+    display: flex;
+    font-size: 18px;
+    color: #E5E7EB;
+    list-style: none;
+    font-weight: 300;
+    padding: 0;
+    gap: 20px;
+}
+
+.headerDiv1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0;
+    border: 0;
+    margin-top: 0;
+    padding-bottom: 5%;
+    
+}
+
+
+
+.headerDiv2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+    padding-bottom: 10%;
+}
+
+.main h1, p, button {
+    padding: 0;
+    margin: 0;
+}
+
+.main p {
+    font-weight: 400;
+}
+
+.image-frame {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 300px;
+    max-width: 600px;
+    max-height: 250px;
+    background-color: gray;
+}
+
+.image-frame {
+    font-weight: 300;
+}
+
+
+
+.main {
+    max-width: 40%;
+}
+
+div[class='main'] h1 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    gap: 0;
+}
+
+div[class=main] button {
+    background-color: #3882F6;
+    margin-top: 20px;
     color: #F9FAF8;
-    font-weight: 800;
-
-}
-
-.sec1, footer {
-    background-color: #1F2937;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    flex-shrink: unset;
-}
-
-.sec1 img {
-    flex: 1;
-    width: 720px;
-    height: auto;
-    display: flex;
-    align-self: flex-end;
-    margin-left: auto;
+    border-radius: 10px;
+    padding: 10px 35px;
+    font-weight: 900;
+    border: 0;
+    font-size: 18px;
 }
 
 h1 {
     font-size: 48px;
     font-weight: 800;
     color: #F9FAF8;
+    padding-top: 0;
 }
 
 .one {
@@ -41,9 +118,11 @@ h1 {
 }
 
 .sec2 {
-    padding: 10px;
+    padding: 1% 20%;
     display: flex;
+    flex: 1;
     flex-direction: column;
+    padding-bottom: 3%;
 }
 
 h2 {
@@ -58,8 +137,9 @@ h2 {
     display: flex;
     align-self: center;
     justify-content: center;
-    max-width: 450px;
-    max-height: 450px;
+    max-width: 500px;
+    max-height: 500px;
+    padding-bottom: 4%;
 }
 
 .item1, .item2, .item3, .item4 {
@@ -69,34 +149,37 @@ h2 {
 
 .container p {
     color: #1F2937;
-    font-weight: 300;
+    font-weight: 350;
     padding: 5px;
     margin: auto;
+    padding: 2px;
     justify-content: center;
     text-align: center;
 }
 
 .box1, .box2, .box3, .box4 {
-    width: 150px;
-    height: 150px;
-    border: #3882F6 solid 5px;
+    width: 160px;
+    height: 160px;
+    border: #3882F6 solid 4px;
     border-radius: 15px;
-}
-
-button {
-    background-color: #3882F6;
-    color: #F9FAF8;
-    border-radius: 5px;
-    padding: 2px 15px 2px 15px;
-    font-weight: bolder;
-    border: 0;
 }
 
 .sec3 {
     background-color: #E5E7EB;
+    padding: 70px 250px ;
     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec3con {
+    display: flex;
+    flex-flow: row nowrap;
     flex: 1;
-    padding: 70px 250px 70px 250px;
+    margin: 0;
+    width: 70%;
+    margin: 7% 20%;
+    max-width: 50%;
 }
 
 #quote {
@@ -104,25 +187,77 @@ button {
     font-style: italic;
     font-weight: 200;
     color: #1F2937;
+   
 }
 
 #sign {
     font-size: 18px;
     font-weight: 700;
     color: #1F2937;
+    flex-shrink: 0;
+    justify-content: flex-end;
+    align-self: flex-end;
 }
 
 .sec4 {
+    display: flex;
+    margin: auto;
+}
+
+.sec4blue {
+    display: flex;
+    flex: 1;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    padding: 10px 100px 10px 100px;
+    margin: 50px;
+    border-radius: 10px;
+    gap: 150px;
+
+}
+
+
+.sec4blue p {
+    margin-top: auto;
+}
+
+#signBlue {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#signBlue2 {
+    margin-right: auto;
+    align-self: center;
+}
+
+#btnBack {
+    width: auto;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.sec4blue {
+#btn2 {
     background-color: #3882F6;
     color: #F9FAF8;
-    padding: 10px 100px 10px 100px;
-    margin: 50px;
+    font-weight: 900;
+    border-radius: 5px;
+    border: #F9FAF8 solid 3px;
+    padding: 5px 25px;
+    justify-self: center;
+    align-self: center;
 }
 
+footer {
+    background-color: #1F2937;
+    color: #F9FAF8;
+    display: flex;
+    min-height: 90px;
+    justify-content: center;
+    align-items: center;
+}
 
