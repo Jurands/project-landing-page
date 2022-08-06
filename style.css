@@ -71,16 +71,14 @@ header {
     align-self: center;
     align-items: center;
     justify-content: center;
-    width: 600px;
+    width: 550px;
     height: 300px;
     max-width: 600px;
     max-height: 250px;
     background-color: gray;
-}
-
-.image-frame {
     font-weight: 300;
 }
+
 
 
 
@@ -131,15 +129,17 @@ h2 {
     font-size: 36px;
     font-weight: bolder;
     color: #1F2937;
+    padding-top: 5px;
 }
 
 .container {
     display: flex;
+    box-sizing: border-box;
     align-self: center;
     justify-content: center;
     max-width: 500px;
     max-height: 500px;
-    padding-bottom: 4%;
+    padding-bottom: 76px;
 }
 
 .item1, .item2, .item3, .item4 {
@@ -149,12 +149,12 @@ h2 {
 
 .container p {
     color: #1F2937;
-    font-weight: 350;
+    font-weight: 400;
     padding: 5px;
-    margin: auto;
-    padding: 2px;
-    justify-content: center;
+    padding-bottom: 0;
     text-align: center;
+    font-size: 1.1rem;
+
 }
 
 .box1, .box2, .box3, .box4 {
@@ -166,37 +166,41 @@ h2 {
 
 .sec3 {
     background-color: #E5E7EB;
-    padding: 70px 250px ;
+    padding: 70px 250px;
+    padding-bottom: -20px ;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0;
+    margin: auto;
 }
 
 .sec3con {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     flex: 1;
-    margin: 0;
-    width: 70%;
+    padding: 50px 0;
+    margin: auto;
     margin: 7% 20%;
-    max-width: 50%;
+    border: yellow solid 2px;
 }
 
 #quote {
     font-size: 36px;
     font-style: italic;
-    font-weight: 200;
+    font-weight: 300;
     color: #1F2937;
-   
+    min-width: 75%;
+    padding: 0 1%;
+
 }
 
 #sign {
-    font-size: 18px;
+    font-size: 28px;
     font-weight: 700;
     color: #1F2937;
     flex-shrink: 0;
-    justify-content: flex-end;
-    align-self: flex-end;
+    padding-left: 65%;
 }
 
 .sec4 {
@@ -209,8 +213,8 @@ h2 {
     flex: 1;
     background-color: #3882F6;
     color: #F9FAF8;
-    padding: 10px 100px 10px 100px;
-    margin: 50px;
+    padding: 50px 100px;
+    margin: 90px 70px;
     border-radius: 10px;
     gap: 150px;
 
@@ -221,11 +225,18 @@ h2 {
     margin-top: auto;
 }
 
+h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 #signBlue {
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: flex-start;
+    padding-bottom: 0;
+    margin: 0;
 }
 
 #signBlue2 {
@@ -239,6 +250,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
 }
 
 #btn2 {
